@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.dados{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+  align-items: center;
+  width: 100%;
+}
+
+.section{
+  width: 100%;
+}
+
+input{
+  width:150px;
+  margin: 10px;
+}
+
+table{
+  width: 800px;
+  margin: 30px auto;
+  border: solid 1px #ccc;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.in{
+  background-color: aliceblue;
+  border: 1px solid;
+}
+

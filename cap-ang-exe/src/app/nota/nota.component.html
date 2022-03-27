@@ -1,0 +1,42 @@
+
+    <div class="dados">
+
+      <input type="text" placeholder="Nome do aluno...">
+      <p>Escreva o nome do aluno</p>
+      <input type="number" placeholder="1° nota">
+      <p>Escreva a primeira nota</p>
+      <input type="number" placeholder="2° nota">
+      <p>Escreva a segunda nota</p>
+      <input type="button" value="Enviar">
+
+    </div>
+
+
+  <div class="section">
+
+  <table>
+    <tr>
+      <td>Nome</td>
+      <td>Nota 1</td>
+      <td>Nota 2</td>
+      <td>Média</td>
+      <td>Situação</td>
+      <td>Ações</td>
+    </tr>
+    <tr *ngFor="let nota of vetorNotas; let id=index" class="in">
+      <td>{{nota.nomeAluno}}</td>
+      <td>{{nota.alunoNota1}}</td>
+      <td>{{nota.alunoNota2}}</td>
+      <td>{{nota.alunoMedia}}</td>
+      <td *ngIf="nota.alunoMedia >= 7">Aprovado</td>
+      <td *ngIf="nota.alunoMedia < 7">Reprovado</td>
+      <td class="button">
+        <button>Alterar</button>
+        <button (click)="excluir(id)">Excluir</button>
+      </td>
+    </tr>
+
+  </table>
+  </div>
+
+
